@@ -5,6 +5,54 @@
 html, body {
 	padding: 0;
 	margin: 0;
+	background: #343434;
+}
+
+/*****************CUSTOM CLASSES*****************/
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #343434;
+}
+.header h1 {
+	margin-left: 1rem;
+	color: #efefef;
+}
+.profile-icon {
+	max-height: 128px;
+	border: 3px solid #666;
+	border-radius: 64px;
+	margin: 0.5rem;
+	-webkit-box-shadow: 3px 3px 0 rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 3px 0 rgba(0,0,0,0.75);
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.75);
+}
+.callout, .callout-skills {
+	padding: 1rem;
+}
+.callout {
+	background: #EFEFEF;
+	border-radius: 0 25px 25px 0;
+}
+.callout-skills {
+	background: #343434;
+	color: #EFEFEF;
+	text-align: center;
+}
+.callout-skills ul {
+	padding: 0;
+	margin: 0;
+}
+.callout-skills ul li {
+	list-style-type: none;
+	margin: 0.5rem;
+	font-size: 1.5rem;
+}
+.footer {
+	text-align: center;
+	color: #efefef;
+	background: #343434;
 }
 
 /*****************RESPONSIVE STYLES*****************/
@@ -16,7 +64,6 @@ html, body {
 	display: flex;
 	width: 100%;
 	flex-wrap: wrap;
-	align-items: center;
 }
 .row::after {
 	display: block;
@@ -40,12 +87,10 @@ html, body {
 	padding: 0 15px;
 }
 
-
-/*****************CUSTOM CLASSES*****************/
-.profile-icon {
-	border: 3px solid #333;
-	border-radius: 128px;
-	-webkit-box-shadow: 3px 3px 0 rgba(0,0,0,0.75);
-	-moz-box-shadow: 3px 3px 0 rgba(0,0,0,0.75);
-	box-shadow: 3px 3px 5px rgba(0,0,0,0.75);
+/*****************MOBILE*****************/
+@media screen and (max-width: 680px){
+	.col-9, .col-3 {
+		width: 100%;
+		margin: 0;
+	}
 }
